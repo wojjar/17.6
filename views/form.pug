@@ -1,0 +1,22 @@
+
+form( action='http://localhost:3000/auth/google' method="get")
+  html(lang='en')
+    head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+      meta(name='description', content='')
+      meta(name='author', content='')
+      title 17.6
+    body.text-center
+      h1.login-class.mb-3.font-weight-normal Please login
+      p.custom-class.mb-3.font-weight-normal
+        | Curabitur sed nisl vel diam faucibus dapibus. 
+        | Praesent hendrerit nunc at ipsum luctus, nec mollis risus lobortis.
+        |Integer ut lorem nec dolor tincidunt hendrerit et a turpis.pellentesque ut posuere sem.
+      label.sr-only(for='login') login
+      input#login.form-control(type='login', name='login', placeholder='login', required='', autofocus='')
+      label.sr-only(for='password') Password
+      input#password.form-control(type='password', placeholder='password', required='')
+      button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
+      p.mt-5.mb-3.text-muted © 2018
+form
